@@ -1,7 +1,7 @@
 The goal of this project was to create an application where i could ask for a manga, an anime or a moovie and it would open the right link.
 It would open the right episode (the first one if it's the first time i am watching the anime/ or the next episode if I already watched some)
 
-# Eplanation of the project : 
+# Explanation of the project : 
 
 To manage that I created files .csv that are the database of my project. 
 - One for each type of things i can ask about (moovie, anime ...)
