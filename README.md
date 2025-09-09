@@ -17,4 +17,4 @@ I used python for the scrapping with 2 differents library :
 MoreOver, I used TkInter to create a little application to avoid asking what I am looking for in the terminal.
 
 # Main Problem 
-The problem is that the website are changing so the code is not working anymore. 
+The website are changing (The URL or just the HTML) so the code is not working anymore. 
