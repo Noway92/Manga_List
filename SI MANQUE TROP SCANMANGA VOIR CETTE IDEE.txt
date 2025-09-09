@@ -1,0 +1,23 @@
+for anime in animes :
+            a = anime.find('a')
+            if(a is not None):
+                #Strip c'est pour enlever les espaces
+                new_nom=a.text.strip().lower()
+                new_lien=a["href"]
+                
+                #Convertit en date classique (de base c'est en Unix)
+                date_unix=int(anime["datetime"])
+                new_date = datetime.fromtimestamp(date_unix)
+                if(new_date>=ancienne_date):
+                    if(new_nom not in self.list_nom):
+                        self.list_ScanManga_lien.append(new_lien)
+                        self.list_nom.append(new_nom)
+                        self.list_dernier_vu.append(-1)
+                        self.list_toonily_lien.append(0)
+                        self.list_MangaDemon_lien.append(0)
+                    else:
+                        if(self.list_ScanManga_lien[self.list_nom.index(new_nom)]==0):
+                            self.list_ScanManga_lien[self.list_nom.index(new_nom)]=new_lien
+                else:
+                    stop=True
+                    return
